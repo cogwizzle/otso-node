@@ -26,7 +26,7 @@ const command = {
     const packageJson = read(cwd() + '/package.json', 'json')
     if (packageJson) {
       const options = Object.keys(packageJson.scripts)
-      const local = loadConfig('cogsprocket', cwd())
+      const local = loadConfig('otso', cwd())
       const myConfig = {
         ...config,
         ...local,
